@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campanha de conscientização contra a violência racial. Denuncie anônima e seguramente.">
+    <meta name="author" content="Agência Full 360">
+    <title>Violência Racial Contra Crianças e Adolescentes - Denuncie</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23f4b400'>✊</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Entry Screen -->
+    <div id="entryScreen" class="entry-screen" role="dialog" aria-label="Tela de aviso de campanha">
+        <div class="entry-background"></div>
+        <div class="entry-overlay"></div>
+        <div class="entry-content">
+            <img src="img/unicef-logo-transparent-free-png.webp" alt="Logo UNICEF" class="entry-logo">
+            <div class="entry-title-group">
+                <p class="entry-warning">Aviso de campanha</p>
+                <h1 class="entry-title">Racismo contra crianças e adolescentes não pode ser ignorado.</h1>
+                <p class="entry-description">UNICEF apoia denúncias seguras e anônimas. Clique para abrir o site e agir.</p>
+            </div>
+            <button id="enterButton" class="btn btn-primary btn-enter" aria-label="Abrir site">
+                ABRIR SITE
+            </button>
+            <span class="entry-hint">Clique para continuar</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="img/unicef-logo-transparent-free-png.webp" alt="Logo UNICEF" class="navbar-brand-logo">
+                <span class="logo-text">UNICEF</span>
+            </div>
+            
+            <div class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#report-call" class="nav-link">Denunciar</a></li>
+                <li><a href="#security" class="nav-link">Segurança</a></li>
+                <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+                <li><a href="#footer" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background" style="background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(244,180,0,0.12) 100%), url('img/criancas.png') center/cover no-repeat;">
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content" id="heroContent">
+            <h1 class="hero-title">
+                <span class="title-line">VIOLÊNCIA</span>
+                <span class="title-line">RACIAL</span>
+            </h1>
+            
+            <h2 class="hero-subtitle">
+                <span class="subtitle-highlight">Contra Crianças</span>
+                <span class="subtitle-highlight">e Adolescentes</span>
+            </h2>
+
+            <p class="hero-text">Não se cale. <span class="highlight">Denuncie.</span></p>
+
+            <button class="btn btn-primary btn-hero" aria-label="Denunciar agora">
+                <span>DENUNCIAR AGORA</span>
+            </button>
+
+            <div class="hero-scroll-indicator" id="scrollIndicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Call to Action Section -->
+    <section id="report-call" class="report-call">
+        <div class="container">
+            <h2 class="section-title reveal-text">Faça a Diferença Agora</h2>
+            
+            <!-- Call Card -->
+            <div class="call-card reveal-card">
+                <div class="call-card-content">
+                    <div class="call-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="call-info">
+                        <p class="call-label">Ligue e Denuncie</p>
+                        <p class="call-number">100</p>
+                    </div>
+
+                    <div class="call-status">
+                        <p class="status-label">Anônimo e Seguro</p>
+                        <svg class="status-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <a href="tel:100" class="btn btn-call" aria-label="Ligar para 100">
+                    LIGAR AGORA
+                </a>
+            </div>
+
+            <!-- Anonymous Message Option -->
+            <div class="anonymous-message reveal-card" aria-label="Enviar mensagem anônima">
+                <div class="message-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                
+                <div class="message-content">
+                    <h3>Enviar Mensagem Anônima</h3>
+                    <p>Informe onde está acontecendo</p>
+                </div>
+
+                <div class="message-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anonymous Report Form Section -->
+    <section id="report-form" class="report-form">
+        <div class="container">
+            <h2 class="section-title reveal-text">Fazer uma Denúncia</h2>
+            <p class="section-subtitle reveal-text">Sua identidade será protegida. Ajude-nos a proteger crianças e adolescentes.</p>
+
+            <form id="reportForm" class="report-form-container reveal-card" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Nome (Opcional)</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Seu nome"
+                        class="form-input"
+                    >
+                </div>
+
+                <!-- Anonymous Checkbox -->
+                <div class="form-group form-group-checkbox">
+                    <label for="anonymous" class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            id="anonymous" 
+                            name="anonymous"
+                            class="form-checkbox"
+                        >
+                        <span>Desejo permanecer anônimo</span>
+                    </label>
+                </div>
+
+                <!-- City Field -->
+                <div class="form-group">
+                    <label for="city">Cidade *</label>
+                    <input 
+                        type="text" 
+                        id="city" 
+                        name="city" 
+                        placeholder="Qual cidade?"
+                        class="form-input"
+                        required
+                    >
+                </div>
+
+                <!-- State Field -->
+                <div class="form-group">
+                    <label for="state">Estado *</label>
+                    <select 
+                        id="state" 
+                        name="state"
+                        class="form-input"
+                        required
+                    >
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <!-- Report Type -->
+                <div class="form-group">
+                    <label for="reportType">Tipo de Denúncia *</label>
+                    <select 
+                        id="reportType" 
+                        name="reportType"
+                        class="form-input"
+                        required
+                    >
+                        <option value="">Selecione um tipo</option>
+                        <option value="bullying">Bullying racial</option>
+                        <option value="violence">Violência física</option>
+                        <option value="discrimination">Discriminação</option>
+                        <option value="harassment">Assédio racial</option>
+                        <option value="exclusion">Exclusão social</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group">
+                    <label for="description">O que aconteceu? *</label>
+                    <textarea 
+                        id="description" 
+                        name="description" 
+                        placeholder="Descreva a situação com detalhes"
+                        class="form-textarea"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="date">Data aproximada do incidente *</label>
+                    <input 
+                        type="date" 
+                        id="date" 
+                        name="date"
+                        class="form-input"
+                        required
+                    >
+                </div>
+
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location">Local do incidente (Escola, Rua, etc.)</label>
+                    <input 
+                        type="text" 
+                        id="location" 
+                        name="location" 
+                        placeholder="Onde aconteceu?"
+                        class="form-input"
+                    >
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-submit" aria-label="Enviar denúncia">
+                    ENVIAR DENÚNCIA
+                </button>
+
+                <p class="form-disclaimer">Sua denúncia será analisada com confidencialidade e segurança.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2 class="section-title reveal-text">Por que Denunciar?</h2>
+            <p class="section-subtitle reveal-text">Sua segurança e privacidade são nossas prioridades</p>
+
+            <div class="security-grid">
+                <!-- Card 1 -->
+                <div class="security-card reveal-card">
+                    <div class="security-icon lock-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">É Anônimo</h3>
+                    <p class="security-text">Sua identidade será protegida em total sigilo.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="security-card reveal-card">
+                    <div class="security-icon shield-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">É Seguro</h3>
+                    <p class="security-text">Suas informações ficam protegidas e seguras.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="security-card reveal-card">
+                    <div class="security-icon heart-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">É Importante</h3>
+                    <p class="security-text">Sua denúncia pode salvar vidas.</p>
+                </div>
+            </div>
+
+            <!-- Impact Quote -->
+            <div class="impact-quote reveal-card">
+                <p class="quote-text">"Uma denúncia pode mudar uma vida."</p>
+                <p class="quote-subtitle">Sua coragem importa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title reveal-text">Perguntas Frequentes</h2>
+            <p class="section-subtitle reveal-text">Tire suas dúvidas sobre como denunciar</p>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item reveal-card">
+                    <button class="faq-button" aria-expanded="false" aria-label="O que é violência racial contra crianças e adolescentes?">
+                        <span class="faq-question">O que é violência racial contra crianças e adolescentes?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>É qualquer forma de discriminação, agressão, bullying ou violência dirigida a crianças e adolescentes baseada em sua raça, cor, etnia ou origem. Inclui palavras ofensivas, exclusão social, agressão física e psicológica.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item reveal-card">
+                    <button class="faq-button" aria-expanded="false" aria-label="Como posso fazer uma denúncia?">
+                        <span class="faq-question">Como posso fazer uma denúncia?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode ligar para o 100 (Disque Denúncia), preencher o formulário neste site ou ir até a delegacia mais próxima. Todas as formas garantem sigilo e segurança.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item reveal-card">
+                    <button class="faq-button" aria-expanded="false" aria-label="Minha denúncia será anônima?">
+                        <span class="faq-question">Minha denúncia será anônima?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Se você marcar a opção de anonimato, seus dados pessoais não serão divulgados. As autoridades investigarão com total confidencialidade.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item reveal-card">
+                    <button class="faq-button" aria-expanded="false" aria-label="O que acontece após eu denunciar?">
+                        <span class="faq-question">O que acontece após eu denunciar?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sua denúncia será encaminhada às autoridades competentes, que investigarão o caso e tomarão as medidas necessárias para proteger a criança ou adolescente vítima.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item reveal-card">
+                    <button class="faq-button" aria-expanded="false" aria-label="Como posso ajudar uma vítima?">
+                        <span class="faq-question">Como posso ajudar uma vítima?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode oferecer suporte emocional, denunciar quando presenciar, orientar sobre os canais de denúncia, ou buscar ajuda de profissionais como psicólogos e assistentes sociais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotional Message Section -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-content reveal-card">
+                <h2 class="message-title">Racismo Não É Opinião.<br>É Crime.</h2>
+                <p class="message-subtitle">Proteja quem ainda está aprendendo a viver.</p>
+                <p class="message-text">Seu silêncio dói também. Sejamos a voz daqueles que foram calados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo Section -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✊</span>
+                        <span>Denuncie</span>
+                    </div>
+                    <p class="footer-tagline">Campanha contra violência racial</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#report-call">Denunciar</a></li>
+                        <li><a href="#security">Segurança</a></li>
+                        <li><a href="#faq">Dúvidas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <p>Disque Denúncia: <strong>100</strong></p>
+                    <p>Denunciar violência: sempre</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="footer-disclaimer">
+                <p>Projeto de demonstração acadêmica - Agência Full 360</p>
+                <p>© 2024 Denuncie. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3 class="modal-title">Denúncia Enviada com Sucesso!</h3>
+            <p class="modal-text">Sua denúncia foi registrada com segurança e confidencialidade.</p>
+            <p class="modal-subtitle">Sua identidade será protegida.</p>
+            <button id="modalCloseBtn" class="btn btn-primary" aria-label="Fechar modal">
+                Entendi
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
