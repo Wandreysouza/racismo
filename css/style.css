@@ -220,7 +220,7 @@ body {
         transform: scale(1);
     }
     50% {
-        text-shadow: 0 0 30px rgba(244, 180, 0, 0.8);
+        text-shadow: 0 0 30px rgba(254, 254, 254, 0.959);
         transform: scale(1.1);
     }
 }
